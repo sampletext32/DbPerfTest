@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.3">
           <PrivateAssets>all</PrivateAssets>
@@ -13,6 +14,11 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="2.0.0-preview1-final" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="Benches\datamany.json" />
+      <None Include="Benches\dataoneJoined.json" />
     </ItemGroup>
 
 </Project>

@@ -36,6 +36,8 @@ namespace DbPerfTest
             
             services.AddDbContext<MSPerfTestContext>(builder => 
                 builder.UseSqlServer(Configuration.GetConnectionString("MsPerfTestContext")));
+            services.AddDbContext<PostgresPerfTestContext>(builder => 
+                builder.UseNpgsql(Configuration.GetConnectionString("PostgresPerfTestContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
